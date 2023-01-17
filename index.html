@@ -14,9 +14,21 @@
   <body class="body">
     <header class="page-header">
       <div class="container">
+        <a href="./index.html" class="logo"><span class="web-part">Web</span>Studio</a>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="mobile menu switcher">
+          <svg
+            width="32"
+            height="22">
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu-hamburger"></use> 
+          </svg>
+        </button>
         <nav class="main-nav">
-          <a href="./index.html" class="logo"><span class="web-part">Web</span>Studio</a>
-          <!-- <ul class="site-nav list">
+          <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Studio</a>
             </li>
@@ -45,7 +57,7 @@
               +11 (000) 111-11-11
             </a>
           </li>
-        </ul> -->
+        </ul>
       </div>
     </header>
     <main>
@@ -96,7 +108,9 @@
           <ul class="product list">
             <li class="section-item">
               <img
-                src="./images/product1.jpg"
+                srcset="./images/product1-1x.jpeg 1x,
+                ./images/product1-@2x.jpeg 2x"
+                src="./images/product1-1x.jpeg"
                 alt="Site example on the Mac monitor"
                 width="360"
                 class="product-img img"
@@ -104,7 +118,9 @@
             </li>
             <li class="section-item">
               <img
-                src="./images/product2.jpg"
+                srcset="./images/product2-1x.jpeg 1x,
+                ./images/product2-@2x.jpeg 2x"
+                src="./images/product2-1x.jpeg"
                 alt="Interface example on the smartphone"
                 width="360"
                 class="product-img img"
@@ -112,7 +128,9 @@
             </li>
             <li class="section-item">
               <img
-                src="./images/product3.jpg"
+                srcset="./images/product2-1x.jpeg 1x,
+                ./images/product3-@2x.jpeg 2x"
+                src="./images/product3-1x.jpeg"
                 alt="View of the final product on the smartphone and laptop"
                 width="360"
                 class="product-img img"
@@ -127,7 +145,8 @@
           <ul class="list">
             <li class="section-item">
               <img
-                src="./images/teammember1.jpg"
+                srcset="./images/teammember1-1x.jpeg 1x, ./images/teammember1-@2x.jpeg 2x"
+                src="./images/teammember1-1x.jpeg"
                 alt="Mark Guerrero photo"
                 width="264"
                 class="img"
@@ -169,7 +188,8 @@
             </li>
             <li class="section-item">
               <img
-                src="./images/teammember2.jpg"
+                srcset="./images/teammember2-1x.jpeg 1x, ./images/teammember2-@2x.jpeg 2x"
+                src="./images/teammember2-1x.jpeg"
                 alt="Tom Ford photo"
                 width="264"
                 class="img"
@@ -211,7 +231,8 @@
             </li>
             <li class="section-item">
               <img
-                src="./images/teammember3.jpg"
+                srcset="./images/teammember3-1x.jpeg 1x, ./images/teammember3-@2x.jpeg 2x"
+                src="./images/teammember3-1x.jpeg"
                 alt="Camila Garcia photo"
                 width="264"
                 class="img"
@@ -253,7 +274,8 @@
             </li>
             <li class="section-item">
               <img
-                src="./images/teammember4.jpg"
+                srcset="./images/teammember4-1x.jpeg 1x, ./images/teammember4-@2x.jpeg 2x"
+                src="./images/teammember4-1x.jpeg"
                 alt="Daniel Wilson photo"
                 width="264"
                 class="img"
@@ -406,7 +428,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close_btn" data-modal-close>
+        <button type="button" class="close-button" data-modal-close>
           <svg class="modal-close_icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-close-vector"></use>
           </svg>
@@ -482,6 +504,74 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container">
+      <button
+      type="button"
+      class="close-button js-close-menu"
+      id="mobile-menu">
+        <svg
+          width="8"
+          height="8"> 
+          <use class="icon-close" href="./images/sprite.svg#icon-close-vector"></use> 
+        </svg>
+      </button>
+      <nav class="main-nav">
+        <ul class="site-nav list">
+          <li class="item">
+            <a href="./index.html" class="link current">Studio</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link other">Portfolio</a>
+          </li>
+          <li class="item">
+            <a href="./contacts.html" class="link other">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="support list">
+        <li class="item">
+          <a href="tel:+11(000)111-11-11" class="contact-link phone-menu">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="contact-link mail-menu">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-media_list list">
+        <li class="social-media_item">
+          <a href="#" class="social-media_link">
+            <svg class="instagram-icon" width="24" height="24">
+              <use href="./images/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media_item">
+          <a href="#" class="social-media_link">
+            <svg class="twitter-icon" width="24" height="24">
+              <use href="./images/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media_item">
+          <a href="#" class="social-media_link">
+            <svg class="facebook-icon" width="24" height="24">
+              <use href="./images/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media_item">
+          <a href="#" class="social-media_link">
+            <svg class="linkedin-icon" width="24" height="24">
+              <use href="./images/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
